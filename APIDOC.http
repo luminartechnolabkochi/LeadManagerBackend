@@ -1,0 +1,67 @@
+# api for listing all leads
+
+#method url
+# content-type
+# authorization
+
+# data
+
+###
+
+GET http://127.0.0.1:8000/api/leads/
+
+# api for adding a new lead
+###
+
+POST http://127.0.0.1:8000/api/leads/
+Content-Type: application/json
+
+{
+ 
+  "name": "vipin",
+  "mobile": "989654743",
+  "email": "vipin@gmail.com",
+  "college": "scms",
+  "qualification": "bca",
+  "passout_year": "2024",
+  "source": "walkin",
+  "course": "PYTHON DJANGO",
+  "course_mode": "OFFLINE",
+  "status": "FOLLOWUP"
+}
+
+
+# api call fetching a specific lead
+###
+
+GET http://127.0.0.1:8000/api/leads/2/
+
+
+# api call for updating lead
+###
+PUT http://127.0.0.1:8000/api/leads/2/
+Content-Type: application/json
+
+
+{
+ 
+  "name": "vipin",
+  "mobile": "87890986",
+  "email": "vipin@gmail.com",
+  "college": "scms",
+  "qualification": "bca",
+  "passout_year": "2023",
+  "source": "walkin",
+  "course": "PYTHON DJANGO",
+  "course_mode": "OFFLINE",
+  "status": "FOLLOWUP",
+  "created_date": "2025-01-23T03:50:45.228708Z",
+  "updated_at": "2025-01-23T03:50:45.228708Z"
+}
+
+
+# api call for deleting lead
+
+###
+
+DELETE http://127.0.0.1:8000/api/leads/2/
